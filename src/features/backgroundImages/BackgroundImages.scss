@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.background-images {
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.left-arrow {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $fontColor;
+    background-color: $backgroundColor;
+    border: $containerBorder;
+}
+
+.right-arrow {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $fontColor;
+    background-color: $backgroundColor;
+    border: $containerBorder
+}
+
+.children-container {
+    flex-grow: 2;
+    background-color: $backgroundColor;
+    border: $containerBorder;
+}

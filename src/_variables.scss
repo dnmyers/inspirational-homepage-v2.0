@@ -1,0 +1,16 @@
+$font: 'Roboto', sans-serif;
+$fontSize: 16px;
+$fontWeight: 700;
+$fontColor: #fff;
+$borderRadius: 15px;
+$backgroundColor: rgba(0, 0, 0, 0.3);
+$containerBorder: none;
+
+@mixin tasksContainer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2em;
+    margin: 1em 0;
+}
