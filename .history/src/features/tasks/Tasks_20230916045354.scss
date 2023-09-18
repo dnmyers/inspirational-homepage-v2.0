@@ -1,0 +1,6 @@
+@import '../../variables';
+
+.tasks-container {
+    @include tasksContainer;
+    min-height: 10em;
+}

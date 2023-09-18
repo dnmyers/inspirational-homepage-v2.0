@@ -1,0 +1,6 @@
+@use '../../variables';
+
+.tasksContainer {
+    @include tasksContainer;
+    min-height: 10em;
+}

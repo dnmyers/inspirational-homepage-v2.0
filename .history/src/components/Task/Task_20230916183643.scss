@@ -1,0 +1,13 @@
+@import '../../variables';
+
+.task {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.15em;
+    // margin: 1em;
+}
+
+.tasks-row {
+    display: flex;
+    flex-direction: row;
+}

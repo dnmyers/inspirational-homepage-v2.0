@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.task {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0 2em 0 2em;
+    // min-width: 8em;
+    margin: 0 1em 2em 0;
+    // Give each task a random background-color
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.complete {
+    position: absolute;
+    top: -1em;
+    right: -3em;
+    font-size: 2px 4px;
+    padding: 8px;
+    background-color: hsla(100, 100%, 30%, 0.55);
+    border-radius: 35px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.remove {
+    position: absolute;
+    top: -1em;
+    right: 6em;
+    font-size: 8px;
+    padding: 4px;
+    background-color: red;
+    border-radius: 35px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}

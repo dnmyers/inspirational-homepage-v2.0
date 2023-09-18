@@ -1,0 +1,33 @@
+@import '../../variables';
+
+.task {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.15em;
+    margin-bottom: 1em;
+    // Give each task a random background-color
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.complete {
+    position: absolute;
+    top: -1em;
+    right: -3em;
+    font-size: 8px;
+    padding: 4px;
+    background-color: green;
+    border-radius: 35px;
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.remove {
+    position: absolute;
+    top: -1em;
+    right: 6em;
+    font-size: 8px;
+    padding: 4px;
+    background-color: red;
+    border-radius: 35px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}

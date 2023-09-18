@@ -1,0 +1,10 @@
+@import '../../variables';
+
+.previousArrow {
+    color: $fontColor;
+    font-size: 1.5em;
+
+    &:hover {
+        transform: scale(1.25);
+    }
+}
