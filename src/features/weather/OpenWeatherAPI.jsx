@@ -1,1 +1,0 @@
-export const appid = "c369ba5a91131781ca0f23daea05023b";

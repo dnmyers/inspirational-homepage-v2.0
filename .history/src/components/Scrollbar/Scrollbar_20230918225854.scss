@@ -1,0 +1,25 @@
+.custom-scrollbars__content {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.custom-scrollbars__track-and-thumb {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 16px;
+}
+
+// The track is meant to fill the space it's given, so top and bottom are set to 0
+.custom-scrollbars__track {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 16px;
+    cursor: pointer;
+}
