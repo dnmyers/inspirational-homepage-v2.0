@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container, Row, Col } from "react-grid-system";
-import { CircleLoader } from 'react-spinners';
+import
 
 import {
     fetchBackgroundImages,
@@ -37,7 +37,9 @@ const BackgroundImages = (props) => {
 
     if(isLoading) {
         return (
-            <CircleLoader size={100} color={"#FFFFFF"} loading={isLoading} />
+            <div className="background-images-loading">
+                <h1>Loading...</h1>
+            </div>
         );
     }
 

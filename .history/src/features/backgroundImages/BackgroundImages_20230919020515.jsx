@@ -37,7 +37,9 @@ const BackgroundImages = (props) => {
 
     if(isLoading) {
         return (
-            <CircleLoader size={100} color={"#FFFFFF"} loading={isLoading} />
+            <div className="background-images-loading">
+                <h1>Loading...</h1>
+            </div>
         );
     }
 

@@ -38,9 +38,7 @@ const Quote = () => {
     // }, [quoteContent, quoteAuthor]);
 
     if(isLoading) {
-        return (
-            <CircleLoader size={100} color={"#FFFFFF"} loading={isLoading} />
-        );
+        return <h1>Loading...</h1>;
     }
 
     if(error) {
