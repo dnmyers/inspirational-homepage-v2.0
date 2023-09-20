@@ -1,0 +1,44 @@
+@import '../../variables';
+
+.weather-container {
+    display: flex;
+    max-width: 12em;
+    max-height: 4em;
+    align-items: center;
+    margin: 1em;
+    padding: 1em 1.5em;
+    border-radius: $borderRadius;
+    background-color: rgba(20, 20, 20, 0.45);
+    box-shadow: 0 0 5em rgba(25, 25, 25, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    align-items: end;
+    align-content: flex-end;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .weather-icon {
+        flex: 1 0 auto;
+        height: 5em;
+        padding: 0 0.5em 0.25em 0;
+    }
+
+    .weather-info {
+        flex: 1 0 auto;
+    }
+}
+
+.weather-info .weather-temp {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.weather-info .weather-description {
+    font-size: 1em;
+    font-weight: 500;
+    color: rgba(200, 200, 200, 0.8);
+}

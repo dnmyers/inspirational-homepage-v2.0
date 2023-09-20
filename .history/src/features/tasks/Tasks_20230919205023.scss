@@ -1,0 +1,10 @@
+@import '../../variables';
+
+.tasksContainer {
+    @include tasksContainer;
+
+    min-height: 15em;
+    max-height: 25em;
+    overscroll-behavior: auto;
+    overflow: auto;
+}

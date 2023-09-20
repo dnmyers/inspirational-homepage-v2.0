@@ -1,0 +1,10 @@
+@import '../../variables';
+
+.nextArrow {
+    color: $fontColor;
+    font-size: 3rem;
+    margin-right: 2em;
+    &:hover {
+        cursor: pointer;
+    }
+}

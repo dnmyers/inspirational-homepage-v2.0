@@ -1,0 +1,11 @@
+@import '../../variables';
+
+.previousArrow {
+    color: $fontColor;
+    font-size: 3rem;
+    margin-left: 0.25em;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

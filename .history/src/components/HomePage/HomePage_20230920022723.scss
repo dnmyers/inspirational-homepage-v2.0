@@ -1,0 +1,28 @@
+@import '../../variables';
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section {
+    flex: 1 0 auto;
+}
+
+.middle-section {
+    flex: 1 0 auto;
+}
+
+.task-section {
+    // width: 100%;
+}
+
+.bottom-section {
+    flex: 1 0 auto;
+}
+
+@media only screen and (min-width: 720) {
+    .weather {
+        align-self: flex-end;
+    }
+}
