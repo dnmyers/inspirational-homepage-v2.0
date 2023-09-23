@@ -55,6 +55,7 @@ export const weatherSlice = createSlice({
 });
 
 export const selectWeather = (state) => state.weather.weather;
+console.log("🚀 ~ file: weatherSlice.jsx:64 ~ selectWeather:", selectWeather)
 export const selectIsLoading = (state) => state.weather.isLoading;
 export const selectError = (state) => state.weather.error;
 

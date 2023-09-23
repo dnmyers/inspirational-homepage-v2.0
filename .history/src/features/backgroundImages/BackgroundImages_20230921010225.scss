@@ -11,12 +11,8 @@
 
 .loading {
     display: flex;
-    flex-direction: column;
-
-    h2 {
-        font-size: 1.5rem;
-        color: black;
-    }
+    justify-content: center;
+    align-items: center;
 }
 
 .left-arrow {

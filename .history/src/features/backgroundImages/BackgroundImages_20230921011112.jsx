@@ -33,18 +33,26 @@ const BackgroundImages = (props) => {
         }
     }, [backgroundImages, currentBackgroundImageIndex]);
 
-    if (isLoading) {
+    if(isLoading) {
         return (
-            <div className="loading text-center">
-                <CircleLoader
-                    size={200}
-                    color={"#000000"}
-                    loading={isLoading}
-                />
-                <h2>Loading...</h2>
-            </div>
+            <Container>
+                <Row>
+                    <Col lg={5} xl={5}>&nbsp;</Col>
+                    <Col lg={2} xl={2}>
+                        <div className="loading">
+                            <CircleLoader
+                                size={200}
+                                color={"#000000"}
+                                loading={isLoading}
+                            />
+                            <h2>Loading...</h2>
+                        </div>
+                    </Col>
+                    <Col lg={5} xl={5}>&nbsp;</Col>
+                </Row>
+            </Container>
         );
-    }c
+    }
 
     if(error) {
         return (

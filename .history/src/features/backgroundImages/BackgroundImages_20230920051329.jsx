@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container, Row, Col, Hidden, Visible } from "react-grid-system";
 import { CircleLoader } from 'react-spinners';
+
 import {
     fetchBackgroundImages,
     selectBackgroundImages,
@@ -16,6 +18,7 @@ import './BackgroundImages.scss';
 const BackgroundImages = (props) => {
     const [currentBackgroundImageIndex, setCurrentBackgroundImageIndex] = useState(0);
     const [currentBackgroundImage, setCurrentBackgroundImage] = useState('');
+
     const dispatch = useDispatch();
     const backgroundImages = useSelector(selectBackgroundImages);
     const isLoading = useSelector(selectIsLoading);
@@ -33,18 +36,16 @@ const BackgroundImages = (props) => {
         }
     }, [backgroundImages, currentBackgroundImageIndex]);
 
-    if (isLoading) {
+
+    if(isLoading) {
         return (
-            <div className="loading text-center">
-                <CircleLoader
-                    size={200}
-                    color={"#000000"}
-                    loading={isLoading}
-                />
-                <h2>Loading...</h2>
-            </div>
+            <CircleLoader
+                size={200}
+                color={"#000000"}
+                loading={isLoading}
+            />
         );
-    }c
+    }
 
     if(error) {
         return (

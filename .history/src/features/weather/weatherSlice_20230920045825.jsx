@@ -20,13 +20,22 @@ export const fetchWeather = createAsyncThunk(
                         appid: apiKeys.openWeatherApiId,
                         lat,
                         lon,
-                        units: 'imperial',
-                        exclude: 'minutely,hourly,daily,alerts',
-                    }
+                        units: "imperial",
+                        exclude: "minutely,hourly,daily,alerts",
+                    },
                 }
             );
 
             const weather = response.data;
+            console.group("weather/fetchWeather");
+            console.log("weatherSlice - response:");
+            console.dir(response);
+            console.log("weatherSlice - response.data: ");
+            console.dir(response.data);
+            console.log("weatherSlice - weather: ");
+            console.dir(weather);
+            console.groupEnd();
+
             return weather;
         } catch (error) {
             return error.response.data;
@@ -55,6 +64,7 @@ export const weatherSlice = createSlice({
 });
 
 export const selectWeather = (state) => state.weather.weather;
+console.log("🚀 ~ file: weatherSlice.jsx:64 ~ selectWeather:", selectWeather)
 export const selectIsLoading = (state) => state.weather.isLoading;
 export const selectError = (state) => state.weather.error;
 
